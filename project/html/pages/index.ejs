@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <% include ../helpers/head %>
+    <% include ../helpers/head.ejs %>
 </head>
 
 <body>
@@ -8,18 +8,28 @@
   <!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
   <!-- Check out more components here: http://getbootstrap.com/components/ -->
   <div class="page-header">
-    <h1>Hey web apps are so cool</h1>
+    <h1>Post Your Thoughts On: College Education</h1>
   </div>
 
   <p id="demo">
-    This is me testing out a lil html file
+    Login and and tell us what you think!!!
   </p>
 
-  <button class="btn btn-default" type="button" onclick="myFunction()">
-    Try it
-  </button>
+  <button id="signIn123" class="btn btn-default" type="button" onClick="toggleSignIn()">
+      sign in 
+    </button>
+  <form>
+      <br><br>
+      Post title:<br>
+      <input id="title123" type="text" name="postTitle"> <br>
+      Post body:<br>
+      <input id="body123" type="text" name="postBody"> 
+    </form>
+    <div id="stream" ></div>
 
-  <div id="doge-image"/>
+    <button id="submit123" class="btn btn-default" type="button" onClick="handleMessageFormSubmit()">
+        Submit
+      </button>
 
 </body>
 
